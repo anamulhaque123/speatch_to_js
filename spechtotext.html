@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <title>speech to text in javascript</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+     
+    <style>
+        .blue-color {
+            color:blue;
+        }
+         
+        .green-color {
+            color:green;
+        }
+         
+        .teal-color {
+            color:teal;
+        }
+         
+        .yellow-color {
+        color:yellow;
+        }
+        
+        .red-color {
+            color:red;
+        }
+       </style> 
+  </head>
+
+  <body>
+     <div class="container">
+            <h1 class="text-center mt-5">Speech to Text </h1>
+            <div class="form-group">
+                <textarea id="textbox" rows="6" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <!-- <select name="countriesDropDown" id="countriesDropDown">
+                </select> -->
+                <select name="language" id="language">
+                    <option value= "en-US">English</option>
+                    <option value="bn-BD">Bangla</option>
+                   
+                    <option value= "ar-SA">Arabic</option>	
+                    <option value= "ur-PK">Urdu</option>
+                    <option value= "hi-IN">Hindi</option>
+                    <option value= "th-TH">Thailand</option>
+                  </select>
+        
+                  <input type="text" name="" hidden id="textlanguage">
+                <!-- <span  id="start-btn"  class="bi bi-mic red-color"> </span>  -->
+                <button id="start-btn" type="button" class="btn btn-link"><span class="bi bi-mic"></span></button>
+                <p id="instructions">Press the Start button</p>
+            </div>
+      </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+  </body>
+
+</html>
